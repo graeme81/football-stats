@@ -1,0 +1,13 @@
+<h1><%= @team.name %></h1>
+
+<div>Manager: <%= @team.manager %><br>
+	 Ground: <%= @team.ground %><br>
+	 Capacity: <%= @team.capacity %><br>
+	 <br>
+	 Website: <%= link_to @team.website, 'http://'+@team.website %>
+</div>
+
+<br>
+<%= link_to "Edit Team", edit_team_path(@team) %>
+<br>
+<%= link_to "Delete Team", team_path(@team), method: :delete %>

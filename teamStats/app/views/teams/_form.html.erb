@@ -1,0 +1,19 @@
+<%= form_for @team do |f| %>
+	<%=  f.label :name %><br>
+	<%=  f.text_field :name %><br>
+	<br
+	<%= f.label :manager %><br>
+	<%= f.text_field :manager %><br>
+	<br>
+	<%= f.label :ground %><br>
+	<%= f.text_field :ground %><br>
+	<br>
+	<%= f.label :capacity %><br>
+	<%= f.text_field :capacity %><br>
+	<br>
+	<%= f.label :website %><br>
+	http://<%= f.text_field :website %><br>
+	<br>
+	<%= f.submit %>
+	
+<% end %>

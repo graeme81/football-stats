@@ -1,0 +1,9 @@
+<h1><u> TEAMS IN LEAGUE</u> </h1>
+
+<br>
+<% @teams.each do |team| %>
+
+	<h2><%= link_to team.name, team %></h2>
+
+<% end %>
+
